@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: python-example
+  name: python-example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-example
+  template:
+    metadata:
+      labels:
+        app: python-example
+    spec:
+      containers:
+      - image:  lvthaok8/python:1.0.1
+        name: python-example
+
