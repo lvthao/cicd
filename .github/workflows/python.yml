@@ -37,5 +37,5 @@ jobs:
           context: ./docker/python/
           file: ./docker/python/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/python:$(cat ./docker/python/version)
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/python:latest
 
